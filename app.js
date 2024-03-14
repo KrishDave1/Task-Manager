@@ -21,7 +21,8 @@ app.use('/api/v1/tasks', tasks); // This means for this page all the controllers
 
 app.use(notFound); // This is a middleware function which is used to handle the 404 error.
 app.use(errorHandlerMiddleware); // This is a middleware function which is used to handle the 500 error. on failed API calls.
-const port = 3000
+const port = process.env.PORT || 3000; //TODO : This will work only if you run it in command prompt(does not work in powershell).Also command is: 
+//! SET PORT=5000 && node app.js
 
 const start = async () => {
     try {
