@@ -42,3 +42,7 @@ start();
 // app.get('/api/v1/tasks/:id') - get a single task
 // app.patch('/api/v1/tasks/:id') - update task.
 // app.delete('/api/v1/tasks/:id') - delete task.
+
+//Why use patch instead of put?
+// Patch is used when you want to update a part of the object and not the whole object.
+// Put is used when you want to update the whole object.
